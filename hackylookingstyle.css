@@ -1,0 +1,33 @@
+/* Base rules */
+body {
+  background-color: black;
+  color: lightgreen;
+  font-family: monospace; 
+  /* no fucking idea if I should change it to JetBrains Mono ngl */
+}
+/* Other rules ("weirdness from hell") */
+/* Links */
+a {
+  color: lightgreen;
+}
+/* Text */
+p {
+  color: lightgreen;
+}
+/* Headers */
+h1 {
+  color: lightgreen;
+}
+h3 {
+  color: lightgreen;
+}
+h2 {
+  color: lightgreen;
+}
+/* lists */
+ul {
+  color: lightgreen;
+}
+li {
+  color: lightgreen;
+}
