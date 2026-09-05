@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode 1: The WIFI</title>
+    <link href="/hackylookingstyle.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <a href="/index.html">Home</a> <a href="/about.html">About</a> <a href="/microblog.html">Microblog</a> <a href="/blogs/index.html">Blog</a> <a href="/contact.html">Contact</a>
+    <h1>Episode 1: The WIFI</h1>
+    <p>Written in: 04/19/2026 Last edited: 07/08/2026</p>
+    <p><em>This is still in underconstruction!</em></p>
+    <h2>How it all started?</h2>
+    <p>When I found out that the Chromebooks had some secrets that my school forgot to disable, I decided to investigate a little bit. Those idiots forgot to disable <em>chrome://sync-internals</em> that I was able to use this new vulnerability that I found to get the school's wifi password and strike.</p>
+    <p>Here's a small step-by-step on how you can find that:</p>
+    <p>1. Go to the search bar and type in <em>chrome://sync-internals</em> and hit enter.</p>
+    <img src="../assets/blogs-vulnerabilities/step1.png">
+    <p>You should see this screen:</p>
+    <img src="../assets/blogs-vulnerabilities/step2syncinternal.png" width="800px">
+    <p>2. Hit search:</p>
+    <img src="../assets/blogs-vulnerabilities/step3hitsearch.png">
+    <p>3. On the search bar, search for the words "wifi" or "psk".</p>
+    <img src="../assets/blogs-vulnerabilities/step4searchpsk.png">
+    <p>4. (this might take a while, but for me it only took 2 attempts) Select the right one. Decrypt "hex_ssid" and "passphrase" with any <a href="https://www.base64decode.org/">Base64 decoder</a> and voila you have the password and the SSID.</p>
+    <img src="../assets/blogs-vulnerabilities/step5decryptwithbase64.png" width="800px">
+    <p>Now that you have the password, you can add it on your phone or any other device. Remember that if your school has blocked VPN's, you might want to attempt and have one beforehand. For those who don't want to pay for a VPN, use Psiphon, Proton VPN or something that's free. You could also use a paid one but you won't really want to pay for a thing you only use for this one reason. Depending on the VPN you are using, log in before connecting to the school network because schools are being smarter every single day. If you can download a VPN on your computer or laptop, that's better. It will be faster than a hotspot+VPN+noideahowfaryouarefromyourphone. </p>
+    <h2>What else have I found?</h2>
+    <p>Possibly, the schools teacher wifi password. I only found the students one and still trying to elevate access to the "open web". There were like 2 students who had it. Anyway, they had the password to the teacher's wifi and kinda reversed engineered one of them them into giving it but then got banned from using the teachers wifi. I also should state that all of their wifi passwords are very insecure. I also found out that, atleast on my case, they hid the online configurator behind an unskippable warning. You can't access it even with a VPN. Well, depending on what VPN you are trying to use.</p>
+    <p><a href="index.html">Go back to the index</a>, <a href="ep0thestart.html">go to episode 0</a> or <a href="ep2thevpnproblem.html">go to the next episode. (not released yet)</a></p>
+    </body>
+</html>
